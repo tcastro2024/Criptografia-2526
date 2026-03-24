@@ -33,3 +33,14 @@ while parar_programa == 0:
     parar_programa = int(input("\nInsira 0 para continuar ou 1 para parar: "))
 
 print("Programa parou!")
+
+#s z x z W w 
+#s z x z W w 
+#s z x z W w 
+# Cifra de Cesar 
+# Recebe um Texto e uma Chave,
+#  e encripta o texto utilizando a chave,
+# texto = Ola
+# chave = 1 // salta 1 letra
+# Resultado: O -> P, l -> m, a -> b
+# Ola -> Pmb

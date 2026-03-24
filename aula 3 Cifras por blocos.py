@@ -561,6 +561,6 @@ def exemplo_cfb():
 
 if __name__ == "__main__":
         #exemplo_ecb()
-        #exemplo_cbc()
+        exemplo_cbc()
         #exemplo_ofb()
-        exemplo_cfb()
+        #exemplo_cfb()

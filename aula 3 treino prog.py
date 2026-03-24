@@ -69,4 +69,42 @@ media = (nota1 + nota2 + nota3) / 3
 print(f"A média das notas é: {media:.3f}")
 print("Media: ",(nota1 + nota2 + nota3) / 3)
 
+# Utilizando uma função/método para calcular a média
+def calcular_media(n1, n2, n3):
+    media = (n1 + n2 + n3) / 3
+    return media
 
+media = calcular_media(nota1, nota2, nota3)
+print(f"A média das notas é: {media:.3f}")
+
+'''
+1.5 - Contagem Regressiva: Crie um programa que conte de 10 até 1 e, em
+seguida, exiba a mensagem "Feliz Ano Novo!".
+'''
+
+# Contagem regressiva
+# o range() é uma função que gera uma sequência de números,
+#  o primeiro argumento é o início da sequência, 
+# o segundo argumento é o fim da sequência (não incluído)
+#  e o terceiro argumento é o passo (incremento ou decremento). No caso, estamos contando de 10 até 1,
+#  então o início é 10, o fim é 0 (não incluído) e o passo é -1 (decremento).
+for i in range(10, 0, -1): 
+    print(i)        
+print("Feliz Ano Novo!")
+
+'''
+1.6 - Verificação de Número Par ou Ímpar: Escreva um programa que peça
+ao utilizador para inserir um número e determine se ele é par ou ímpar.
+'''
+# Verificação de número par ou ímpar
+numero = int(input("Digite um número: "))
+if numero % 2 == 0: # o operador % é o operador de módulo, que retorna o resto da divisão
+    print(f"O número {numero} é par.")
+else:
+    print(f"O número {numero} é ímpar.")
+
+'''
+1.7 - Tabuada de Multiplicação: Crie um programa que peça ao utilizador
+para inserir um número e, em seguida, exiba a tabuada de multiplicação
+desse número.
+'''

@@ -10,7 +10,7 @@ FUNCIONAMENTO:
 - O valor de deslocamento é determinado pela chave (que se repete)
 - Cada letra da chave define o deslocamento para a letra correspondente
 
-EXEMPLO PRÁTICO:
+EXEMPLO PRÁTICO (funciona por matriz de letras):
     Mensagem: ATACARAAMANHA
     Chave:    SENHASENHASE
     

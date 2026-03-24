@@ -103,7 +103,9 @@ def exemplo_aditivo():
     print(f"\n1. Mensagem original: '{mensagem}'")
     
     # Gerar chave aleatória (números de 0-25)
-    chave = [random.randint(0, 25) for _ in range(len(mensagem))]
+    #chave = [random.randint(0, 25) for _ in range(len(mensagem))]
+    chave = input(f"Digite a chave (números de 0-25 separados por espaço, mínimo {len(mensagem)}): ")
+    chave = list(map(int, chave.split()))
     print(f"2. Chave aleatória (números de 0-25):")
     print(f"   {chave}")
     
