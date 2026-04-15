@@ -3,8 +3,87 @@
 1.1 - Olá Mundo: Escreva um programa que exiba a mensagem "Olá,
 Mundo!" no ecrã.
 '''
-#print("Olá, Mundo!")
+''' 
+print("Olá, Mundo!")
 
+nome = "Andre"
+idade = 45
+
+print(f"Olá, {nome}! Você tem {idade} anos.")
+
+a = 5
+b = 3
+
+soma = a + b
+print(f"A soma de {a} e {b} é: {soma}")
+
+idade = int(input("Digite sua idade: "))
+
+if idade >= 18:
+    print("Você é pode ir a um evento.")
+elif idade < 18 and idade >= 16:
+    print("Você pode ir a um evento, mas precisa de um responsável.")
+else:
+    print("Você não pode ir a um evento.")
+
+for i in range(1, 6, 2):
+    print(i)
+
+nota = 0
+
+
+# 0 != -1 -> verdade
+while nota != -1:
+    #entra no while
+    #pedimos uma nota ao utilizador
+    nota = float(input("Digite uma nota ou -1 para sair: "))
+
+    if nota == -1:
+        break
+
+    print("Classifica notas:")
+    if nota < 10:
+        print("Nota negativa.")
+    elif nota >= 10 and nota < 14:
+        print("Nota satisfatória.")
+    elif nota >= 14 and nota < 18:
+        print("Nota muito boa.")
+    elif nota >= 18 and nota <= 20:
+        print("Nota excelente.")
+    else:
+        print("Nota inválida!")
+'''
+
+frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"]
+for fruta in frutas:
+    print(fruta)
+
+
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+
+def classificar_nota(nota):
+    if nota < 10:
+        return "Nota negativa."
+    elif nota >= 10 and nota < 14:
+        return "Nota satisfatória."
+    elif nota >= 14 and nota < 18:
+        return "Nota muito boa."
+    elif nota >= 18 and nota <= 20:
+        return "Nota excelente."
+    else:
+        return "Nota inválida!"
+
+quantidade_notas = int(input("Digite a quantidade de notas a serem classificadas: "))   
+
+for i in range(1, quantidade_notas + 1):
+    nota = float(input(f"Digite a nota {i}: "))
+    print(classificar_nota(nota))
+
+
+print(saudacao("Carlos"))
+print(classificar_nota(nota))
 '''
 1.2 - Soma de Dois Números: Escreva um programa que solicite ao
 utilizador que insira dois números e, em seguida, exiba a soma desses
@@ -60,6 +139,7 @@ print("Fim do programa.")
 1.4 - Média de Notas: Escreva um programa que calcule a média de três
 notas inseridas pelo utilizador
 '''
+''' 
 #variaveis
 nota1 = float(input("Digite a primeira nota: "))   
 nota2 = float(input("Digite a segunda nota: "))
@@ -76,7 +156,7 @@ def calcular_media(n1, n2, n3):
 
 media = calcular_media(nota1, nota2, nota3)
 print(f"A média das notas é: {media:.3f}")
-
+'''
 '''
 1.5 - Contagem Regressiva: Crie um programa que conte de 10 até 1 e, em
 seguida, exiba a mensagem "Feliz Ano Novo!".
@@ -88,20 +168,24 @@ seguida, exiba a mensagem "Feliz Ano Novo!".
 # o segundo argumento é o fim da sequência (não incluído)
 #  e o terceiro argumento é o passo (incremento ou decremento). No caso, estamos contando de 10 até 1,
 #  então o início é 10, o fim é 0 (não incluído) e o passo é -1 (decremento).
+''' 
 for i in range(10, 0, -1): 
     print(i)        
 print("Feliz Ano Novo!")
+'''
 
 '''
 1.6 - Verificação de Número Par ou Ímpar: Escreva um programa que peça
 ao utilizador para inserir um número e determine se ele é par ou ímpar.
 '''
 # Verificação de número par ou ímpar
+'''
 numero = int(input("Digite um número: "))
 if numero % 2 == 0: # o operador % é o operador de módulo, que retorna o resto da divisão
     print(f"O número {numero} é par.")
 else:
     print(f"O número {numero} é ímpar.")
+    '''
 
 '''
 1.7 - Tabuada de Multiplicação: Crie um programa que peça ao utilizador
