@@ -52,7 +52,7 @@ while nota != -1:
         print("Nota excelente.")
     else:
         print("Nota inválida!")
-'''
+
 
 frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"]
 for fruta in frutas:
@@ -84,6 +84,8 @@ for i in range(1, quantidade_notas + 1):
 
 print(saudacao("Carlos"))
 print(classificar_nota(nota))
+
+'''
 '''
 1.2 - Soma de Dois Números: Escreva um programa que solicite ao
 utilizador que insira dois números e, em seguida, exiba a soma desses
@@ -192,3 +194,52 @@ else:
 para inserir um número e, em seguida, exiba a tabuada de multiplicação
 desse número.
 '''
+'''
+i = 0
+
+numero = int(input("Digite um número para ver a tabuada: "))
+
+print(f"Tabuada de {numero}:")
+while i < 10:
+    i += 1
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")
+    
+'''
+''''
+1.8 - Conversor de Temperatura: Escreva um programa que permita ao
+utilizador converter uma temperatura de graus Celsius para Fahrenheit ou
+de Fahrenheit para graus Celsius, dependendo da escolha do utilizador.
+'''
+'''
+# 0º C = 32º F
+celsius = float(input("Digite a temperatura em Celsius: ")) 
+#"45.7" o float vai converter para um número real/decimal
+
+fahrenheit = (celsius * 9/5) + 32
+
+print(f"{celsius}°C é igual a {fahrenheit:.2f}°F")
+'''
+
+'''
+1.9 - Adivinhar o Número: Crie um jogo onde o programa escolhe um
+número aleatório entre 1 e 100. O utilizador deve tentar adivinhar o
+número. O programa deve fornecer dicas sobre se o palpite do utilizador é
+muito alto ou muito baixo
+
+'''
+import random
+
+numero_secreto = random.randint(1, 100) # gera um número aleatório entre 1 e 100
+tentativa = 0
+while tentativa != -1:
+    palpite = int(input("Digite seu palpite (entre 1 e 100) ou -1 para desistir: "))
+    tentativa += 1
+
+    if palpite < numero_secreto:
+        print("Muito baixo! Tente novamente.")
+    elif palpite > numero_secreto:
+        print("Muito alto! Tente novamente.")
+    else:
+        print(f"Parabéns! Você adivinhou o número {numero_secreto} em {tentativa} tentativas.")
+        break
